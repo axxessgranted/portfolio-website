@@ -6,6 +6,7 @@ import { DiCssdeck } from 'react-icons/di';
 import {
   Container,
   LogoStyled,
+  LogoTextStyled,
   NavContainerStyled,
   SocialsContainerStyled,
   NavLink,
@@ -16,8 +17,17 @@ const Header = () => (
   <Container>
     <LogoStyled>
       <Link href={'/'}>
-        <a style={{ display: 'flex', alignItems: 'center', color: 'white' }}>
-          <DiCssdeck size='3rem' /> <span>axxessgranted</span>
+        {/* TODO: Remove inline styles */}
+        <a
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            color: 'white',
+            marginBottom: '20px',
+          }}
+        >
+          <DiCssdeck size='3rem' />{' '}
+          <LogoTextStyled>axxessgranted</LogoTextStyled>
         </a>
       </Link>
     </LogoStyled>
