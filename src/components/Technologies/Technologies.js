@@ -23,6 +23,7 @@ const Technologies = () => (
       I've worked with a wide array of technologies from back-end to design.
     </SectionText>
     <List>
+      {/* TODO: Map from constants */}
       <ListItem>
         <DiReact size='3rem' />
         <ListContainer>
