@@ -50,10 +50,18 @@ const Header = () => (
     </NavContainerStyled>
     <SocialsContainerStyled>
       {/* TODO: Open social links in a new tab */}
-      <SocialIcons href='https://github.com/axxessgranted'>
+      <SocialIcons
+        href='https://github.com/axxessgranted'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
         <AiFillGithub size='3rem' />
       </SocialIcons>
-      <SocialIcons href='https://www.linkedin.com/in/grant-kantor-692951198/'>
+      <SocialIcons
+        href='https://www.linkedin.com/in/grant-kantor-692951198/'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
         <AiFillLinkedin size='3rem' />
       </SocialIcons>
     </SocialsContainerStyled>
