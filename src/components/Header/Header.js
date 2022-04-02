@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { DiCssdeck } from 'react-icons/di';
 
 import {
@@ -10,8 +10,8 @@ import {
   NavContainerStyled,
   SocialsContainerStyled,
   NavLink,
-  SocialIcons,
 } from './HeaderStyles';
+import { SocialIcon } from '../Icons/SocialIcon';
 
 const Header = () => (
   <Container>
@@ -50,20 +50,12 @@ const Header = () => (
     </NavContainerStyled>
     <SocialsContainerStyled>
       {/* TODO: Open social links in a new tab */}
-      <SocialIcons
-        href='https://github.com/axxessgranted'
-        target='_blank'
-        rel='noopener noreferrer'
-      >
+      <SocialIcon url='https://github.com/axxessgranted'>
         <AiFillGithub size='3rem' />
-      </SocialIcons>
-      <SocialIcons
-        href='https://www.linkedin.com/in/grant-kantor-692951198/'
-        target='_blank'
-        rel='noopener noreferrer'
-      >
+      </SocialIcon>
+      <SocialIcon url='https://www.linkedin.com/in/grant-kantor-692951198/'>
         <AiFillLinkedin size='3rem' />
-      </SocialIcons>
+      </SocialIcon>
     </SocialsContainerStyled>
   </Container>
 );

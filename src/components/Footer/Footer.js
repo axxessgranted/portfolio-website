@@ -1,7 +1,7 @@
 import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
-import { SocialIcons } from '../Header/HeaderStyles';
+import { SocialIcon } from '../Icons/SocialIcon';
 import {
   CompanyContainer,
   FooterWrapper,
@@ -35,20 +35,12 @@ const Footer = () => {
         </CompanyContainer>
         <SocialContainer>
           {/* TODO: Open social links in a new tab */}
-          <SocialIcons
-            href='https://github.com/axxessgranted'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
+          <SocialIcon url='https://github.com/axxessgranted'>
             <AiFillGithub size='3rem' />
-          </SocialIcons>
-          <SocialIcons
-            href='https://www.linkedin.com/in/grant-kantor-692951198/'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
+          </SocialIcon>
+          <SocialIcon url='https://www.linkedin.com/in/grant-kantor-692951198/'>
             <AiFillLinkedin size='3rem' />
-          </SocialIcons>
+          </SocialIcon>
         </SocialContainer>
       </SocialIconsContainer>
     </FooterWrapper>
