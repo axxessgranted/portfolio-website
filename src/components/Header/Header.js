@@ -49,7 +49,6 @@ const Header = () => (
       </li>
     </NavContainerStyled>
     <SocialsContainerStyled>
-      {/* TODO: Open social links in a new tab */}
       <SocialIcon url='https://github.com/axxessgranted'>
         <AiFillGithub size='3rem' />
       </SocialIcon>

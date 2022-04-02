@@ -34,7 +34,6 @@ const Footer = () => {
           <Slogan>Let's build something awesome!</Slogan>
         </CompanyContainer>
         <SocialContainer>
-          {/* TODO: Open social links in a new tab */}
           <SocialIcon url='https://github.com/axxessgranted'>
             <AiFillGithub size='3rem' />
           </SocialIcon>
